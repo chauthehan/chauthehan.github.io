@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: AI stuff
+title: AIstuff
 
 # Your name to show in the footer
 author: Châu Thế Hân
@@ -52,8 +52,8 @@ round-avatar: true
 social-network-links:
   email: "chauthehan00@gmail.com"
   rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: https://www.facebook.com/profile.php?id=100009318398634
-  github: https://github.com/chauthehan/chauthehan
+  facebook: profile.php?id=100009318398634
+  github: chauthehan
   # twitter: daattali
   # patreon: DeanAttali
   # youtube: c/daattali
