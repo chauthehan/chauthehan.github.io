@@ -3,9 +3,9 @@ layout: post
 title: Vector database là gì?
 subtitle: Tất tần tật từ A-F về vector database
 cover-img: /assets/img/20230907_vectordatabase/database_cover.png
-thumbnail-img: /assets/img/thumb.png
+thumbnail-img: /assets/img/20230907_vectordatabase/thumb.gif
 share-img: /assets/img/20230907_vectordatabase/database_cover.png
-tags: [books, test]
+tags: [database, vectordatabase]
 ---
 
 ## Nhu cầu sử dụng Vector database
@@ -36,3 +36,6 @@ Luồng hoạt động của một vector database như sau
 3. Hậu xử lý: Trong một vài trường hợp, vector database lấy ra được các thành phần có độ tương đồng cao và hậu xử lý chúng để trả về kết quả cuối. Bước này có thể bao gồm việc re-ranking các thành phần tương đồng sử dụng một similarity metric khác.
 
 Trong các bài tiếp theo, tôi sẽ nói rõ hơn về các thuật toán này và cách chúng góp phần tạo nên một vector database hoạt động hiệu quả.
+
+## Reference
+1. https://www.pinecone.io/learn/vector-database/
