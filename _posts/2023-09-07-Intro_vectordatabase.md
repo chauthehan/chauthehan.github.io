@@ -8,7 +8,7 @@ share-img: /assets/img/20230907_vectordatabase/database_cover.png
 tags: [database, vectordatabase]
 ---
 
-## Nhu cầu sử dụng Vector database
+## Vector database
 
 **Vector embedding** là một yếu tố quan trọng làm nên thành công của các mô hình ngôn ngữ lớn và đa số các mô hình AI hiện tại vì nó có thể chứa đựng các thông tin quan trọng giúp cho AI có thể hiểu được . Các vector embedding tạo ra bởi các mô hình AI thường là các vector có số lượng chiều rất lớn, tạo ra khó khăn trong việc lưu trữ và quản lý chúng.
 Đó là lý do chúng ta cần một cơ sở dữ liệu được thiết kế chuyên biệt để xử lý kiểu dữ liệu này. Vector database cung cấp các giải pháp lưu trữ tối ưu và khả năng truy vấn cho các cho các embedding, đảm bảo về độ linh hoạt, khả năng mở rộng, và hiệu năng.
