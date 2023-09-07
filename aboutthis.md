@@ -1,5 +1,5 @@
 ---
 layout: page
-title: About me
+title: About this
 subtitle: Another day, another AI tech
 ---
