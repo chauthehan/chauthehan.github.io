@@ -20,7 +20,7 @@ author: Châu Thế Hân
 ###############################################
 
 navbar-links:
-  About this: "aboutthis"
+  About me: "aboutme"
   Resources:
     - Beautiful Jekyll: "https://beautifuljekyll.com"
     - Learn markdown: "https://www.markdowntutorial.com/"
