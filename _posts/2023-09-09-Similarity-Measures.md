@@ -64,7 +64,7 @@ Tích vô hướng cũng hay được sử dụng để đánh giá độ tươn
 
 $$ sim(\mathbf a, \mathbf b) = \frac{\mathbf a \cdot \mathbf b}{||\mathbf a || \cdot || \mathbf b||} $$
 
-||**a**|| và ||**b**|| chính là độ dài của vector. Độ tương tự cosine có giá trị nằm trong khoảng từ -1 đến 1, 1 là khi góc giữa 2 vector là 0 (tức là 2 vector rất sát nhau), 0 là khi chúng vuông góc, và -1 là khi 2 hướng của chúng đối nghịch nhau.
+$||\mathbf a||$ và $||\mathbf b||$ chính là độ dài của vector. Độ tương tự cosine có giá trị nằm trong khoảng từ -1 đến 1, 1 là khi góc giữa 2 vector là 0 (tức là 2 vector rất sát nhau), 0 là khi chúng vuông góc, và -1 là khi 2 hướng của chúng đối nghịch nhau.
 
 ![alt text](/assets/img/20230909_similarity_measure/cosine.png)
 
