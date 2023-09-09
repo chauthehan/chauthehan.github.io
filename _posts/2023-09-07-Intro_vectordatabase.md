@@ -31,7 +31,7 @@ Luồng hoạt động của một vector database như sau
 
 ![alt text](/assets/img/20230907_vectordatabase/vector_database_pipeline.png ).
 
-1. Đánh thứ tự (Indexing): Vector database sử dụng các thuật toán như PQ, LSH, HNSW để đánh thứ tự cho các vector. Bước này chuyển một vector thành một cấu trúc dữ liệu giúp cho việc tìm kiếm nhanh hơn.
+1. Indexing: Vector database sử dụng các thuật toán như PQ, LSH, HNSW để index các vector. Bước này chuyển một vector thành một cấu trúc dữ liệu giúp cho việc tìm kiếm nhanh hơn.
 2. Truy vấn (Querying): Vector database so sánh vector truy vấn với các vector trong tập dữ liệu để tìm ra các thành phần có độ tương đồng cao nhất ( sử dụng các similarity metric)
 3. Hậu xử lý: Trong một vài trường hợp, vector database lấy ra được các thành phần có độ tương đồng cao và hậu xử lý chúng để trả về kết quả cuối. Bước này có thể bao gồm việc re-ranking các thành phần tương đồng sử dụng một similarity metric khác.
 
