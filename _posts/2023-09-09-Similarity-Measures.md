@@ -62,9 +62,9 @@ Tích vô hướng cũng hay được sử dụng để đánh giá độ tươn
 
 Độ tương tự cosine được tính bằng cách lấy tích vô hướng giữa 2 vector chia cho tích của độ dài 2 vector. Phép đo này không bị ảnh hưởng bởi độ lớn của vector mà chỉ là góc giữa chúng. Có nghĩa là các vector có cái giá trị lớn hay nhỏ sẽ đều có độ tương tự cosine là như nhau miễn là chúng đều có hướng giống nhau. Công thức:
 
-$$ sim(\mathbf a, \mathbf b) = \frac{\mathbf a \cdot \mathbf b}{||\mathbf a || \cdot || \mathbf b||} $$
+$$ sim(\mathbf a, \mathbf b) = \frac{\mathbf a \cdot \mathbf b}{\lVert\mathbf a \rVert \cdot \lVert \mathbf b\rVert} $$
 
-$||\mathbf a||$ và $||\mathbf b||$ chính là độ dài của vector. Độ tương tự cosine có giá trị nằm trong khoảng từ -1 đến 1, 1 là khi góc giữa 2 vector là 0 (tức là 2 vector rất sát nhau), 0 là khi chúng vuông góc, và -1 là khi 2 hướng của chúng đối nghịch nhau.
+$ \lVert \mathbf a \rVert$ và $\lVert\mathbf b\rVert$ chính là độ dài của vector. Độ tương tự cosine có giá trị nằm trong khoảng từ -1 đến 1, 1 là khi góc giữa 2 vector là 0 (tức là 2 vector rất sát nhau), 0 là khi chúng vuông góc, và -1 là khi 2 hướng của chúng đối nghịch nhau.
 
 ![alt text](/assets/img/20230909_similarity_measure/cosine.png)
 
