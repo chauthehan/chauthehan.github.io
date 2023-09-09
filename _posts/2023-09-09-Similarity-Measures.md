@@ -46,7 +46,7 @@ $$ \mathbf a \cdot \mathbf b  = \sum_{i=1}^n a_i b_i = a_1 b_1 + a_2 b_2 +..+a_n
 
 một công thức tương tự khác, tích vô hướng có thể được tính bằng tích độ lớn giữa 2 vector và góc cosin giữa chúng
 
-$$ \mathbf a \cdot \mathbf b = |\mathbf a||\mathbf b|cos \alpha  $$
+$$ \mathbf a \cdot \mathbf b = \lvert \mathbf a\rvert \lvert \mathbf b \rvert cos \alpha  $$
 
 ![alt text](/assets/img/20230909_similarity_measure/dot_product.png)
 
