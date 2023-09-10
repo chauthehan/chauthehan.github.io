@@ -61,4 +61,4 @@ Sau đó, thuật toán sẽ phân tích các vector trong mỗi node và vẽ m
 Khi chúng ta truy vấn một HNSW, nó sẽ sử dụng đồ thị này để duyệt qua cây để tìm đến node có nhiều khả năng sẽ chứa một vector có độ tương đồng cao nhất so với query vector. [Xem thêm về HNSW](https://www.pinecone.io/learn/series/faiss/hnsw/)
 
 
-Chúng ta đã nhắc nhiều về việc so sánh các vector để tìm ra độ tương đồng, ta sẽ đi chi tiết về phần này trong bài tiếp theo.
+Chúng ta đã nhắc nhiều về việc so sánh các vector để tìm ra độ tương đồng, ta sẽ đi chi tiết về phần này trong [bài tiếp theo](https://chauthehan.github.io/2023-09-09-Similarity-Measures/).
