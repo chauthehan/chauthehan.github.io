@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Giới thiệu về thiết kế một hệ thống machine learning
-subtitle: Thiết kế hệ thống machine learning
-cover-img: /assets/img/20230907_vectordatabase/database_cover.png
-thumbnail-img: /assets/img/20230907_vectordatabase/thumb.gif
-share-img: /assets/img/20230907_vectordatabase/database_cover.png
-tags: [database, vectordatabase, filtering]
+title: Giới thiệu về thiết kế một hệ thống machine learning (P1)
+subtitle: Thiết kế hệ thống machine learning 
+cover-img: /assets/img/2023199_Intro-ml-sys-design/designing-a-learning-system-in-machine-learning.png
+thumbnail-img: /assets/img/2023199_Intro-ml-sys-design/thumb.webp
+share-img: /assets/img/2023199_Intro-ml-sys-design/designing-a-learning-system-in-machine-learning.png
+tags: [machine learning system, system, system design]
 ---
 
 ## Giới thiệu
@@ -146,3 +146,20 @@ Data thường sẽ có các giá trị bị mất, ta có thể xử lý bằng
     Nhược điểm của phương pháp này là nó có thể tạo ra dữ liệu nhiễu. Sẽ không có phương pháp nào là hoàn hảo, mỗi chúng đều có trade-offs.
 
 - **Feature scaling**
+Đây là quá trình scaling features về phân phối chuẩn. Nhiều mô hình ML sẽ cho kết quả không tốt nếu feature của data nằm ở nhiều khoảng giá trị khác nhau. Dưới đây là một vài kỹ thuật scaling.
+    - **Normalization (min-max scaling)**. Phương pháp này sẽ scale feature về khoảng [0, 1] sử dụng công thức:
+    $$z = \frac{x-xmin}{xmax-xmin}$$
+    Normalization vẫn sẽ giữ nguyên phân phối của feature. Để thay đổi phân phối feature về phân phối chuẩn, ta có thể dùng standardization
+    - **Standardization (Z-score normalization)**
+    Đây là quá trình chuẩn hóa đặc trưng về phân phối chuẩn với trung bình bằng 0 và độ lệch chuẩn bằng 1. Công thức:
+    $$z = \frac{x-\mu}{\sigma}$$
+    Với $\mu$ là trung bình và $\sigma$ là độ lệch chuẩn của feature.
+
+- **Discretization (Bucketing)**
+Đây là quá trình chuyển đổi đặc trưng kiểu liên tục thành đặc trưng kiểu rời rạc. Ví dụ, để thể hiện chiều cao, chúng ta có thể chia chiều cao thành các khoảng giá trị, điều này sẽ giúp cho mô hình tập trung học một vài loại nhãn.
+
+- **Encoding categorical features**
+Đối với các mô hình ML, tất cả các input và output đề phải là kiểu số. Điều này có nghĩa là ta phải encode các đặc trưng thành các số trước khi đưa vào mô hình. Có 3 cách thường được sử dụng để chuyển đặc trưng về dạng số: inter encoding, one-hot encoding, embedding learning.
+
+
+Ở bài tiếp theo, tôi sẽ nói tiếp về quá trình phát triển mô hình và các công đoạn sau đó trong một quá trình xây dựng hệ thống ML.
