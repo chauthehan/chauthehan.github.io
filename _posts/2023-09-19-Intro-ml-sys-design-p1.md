@@ -3,7 +3,7 @@ layout: post
 title: Giới thiệu về thiết kế một hệ thống machine learning (P1)
 subtitle: Thiết kế hệ thống machine learning 
 cover-img: /assets/img/2023199_Intro-ml-sys-design/information-system-scaled.webp
-thumbnail-img: /assets/img/2023199_Intro-ml-sys-design/thumb.webp
+thumbnail-img: /assets/img/2023199_Intro-ml-sys-design/thumbb.webp
 share-img: /assets/img/2023199_Intro-ml-sys-design/information-system-scaled.webp
 tags: [machine learning system, system, system design]
 ---
@@ -149,12 +149,16 @@ Data thường sẽ có các giá trị bị mất, ta có thể xử lý bằng
 - **Feature scaling**
 Đây là quá trình scaling features về phân phối chuẩn. Nhiều mô hình ML sẽ cho kết quả không tốt nếu feature của data nằm ở nhiều khoảng giá trị khác nhau. Dưới đây là một vài kỹ thuật scaling.
     - **Normalization (min-max scaling)**. Phương pháp này sẽ scale feature về khoảng [0, 1] sử dụng công thức:
+
     $$z = \frac{x-xmin}{xmax-xmin}$$ 
+
     Normalization vẫn sẽ giữ nguyên phân phối của feature. Để thay đổi phân phối feature về phân phối chuẩn, ta có thể dùng standardization
     
     - **Standardization (Z-score normalization)**
     Đây là quá trình chuẩn hóa đặc trưng về phân phối chuẩn với trung bình bằng 0 và độ lệch chuẩn bằng 1. Công thức:
+
     $$z = \frac{x-\mu}{\sigma}$$
+    
     Với $\mu$ là trung bình và $\sigma$ là độ lệch chuẩn của feature.
 
 - **Discretization (Bucketing)**
