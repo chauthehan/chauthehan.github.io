@@ -152,14 +152,14 @@ Data thường sẽ có các giá trị bị mất, ta có thể xử lý bằng
 
 $$z = \frac{x-xmin}{xmax-xmin}$$ 
 
-    Normalization vẫn sẽ giữ nguyên phân phối của feature. Để thay đổi phân phối feature về phân phối chuẩn, ta có thể dùng standardization
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Normalization vẫn sẽ giữ nguyên phân phối của feature. Để thay đổi phân phối feature về phân phối chuẩn, ta có thể dùng standardization
     
     - **Standardization (Z-score normalization)**
     Đây là quá trình chuẩn hóa đặc trưng về phân phối chuẩn với trung bình bằng 0 và độ lệch chuẩn bằng 1. Công thức:
 
 $$z = \frac{x-\mu}{\sigma}$$
 
-    Với $\mu$ là trung bình và $\sigma$ là độ lệch chuẩn của feature.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Với $\mu$ là trung bình và $\sigma$ là độ lệch chuẩn của feature.
 
 - **Discretization (Bucketing)**
 Đây là quá trình chuyển đổi đặc trưng kiểu liên tục thành đặc trưng kiểu rời rạc. Ví dụ, để thể hiện chiều cao, chúng ta có thể chia chiều cao thành các khoảng giá trị, điều này sẽ giúp cho mô hình tập trung học một vài loại nhãn.
