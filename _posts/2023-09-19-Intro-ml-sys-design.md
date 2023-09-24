@@ -2,9 +2,9 @@
 layout: post
 title: Giới thiệu về thiết kế một hệ thống machine learning (P1)
 subtitle: Thiết kế hệ thống machine learning 
-cover-img: /assets/img/2023199_Intro-ml-sys-design/designing-a-learning-system-in-machine-learning.png
+cover-img: /assets/img/2023199_Intro-ml-sys-design/information-system-scaled.webp
 thumbnail-img: /assets/img/2023199_Intro-ml-sys-design/thumb.webp
-share-img: /assets/img/2023199_Intro-ml-sys-design/designing-a-learning-system-in-machine-learning.png
+share-img: /assets/img/2023199_Intro-ml-sys-design/information-system-scaled.webp
 tags: [machine learning system, system, system design]
 ---
 
@@ -52,6 +52,7 @@ Mục tiêu của kinh doanh có thể là tăng doanh số thêm 20%, nhưng m�
 | Hệ thống dự đoán click vào quảng cáo| Tăng số lượng click| Tối đa tỉ lệ click-through
 |Phát hiện nội dung độc hại trong một nền tảng media| Cải thiện tính an toàn của nền tảng | Dự đoán nội dung có phải là độc hại|
 |Đề xuất kết bạn| Tăng tỉ lệ người dùng gia tăng network của họ| Tối đa số lượng kết bạn|
+
 
 ###### Xác định đầu vào, đầu ra của hệ thống
 
