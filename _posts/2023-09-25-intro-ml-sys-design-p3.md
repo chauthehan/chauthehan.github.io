@@ -9,6 +9,7 @@ tags: [machine learning system, system, system design]
 ---
 
 ### Model Development
+Các bước tiếp theo trong quá trình phát triển một hệ thống ML dó là deployment-serving và monitoring.
 
 ##### Deployment and Serving
 Đây là quá trình đưa mô hình lên production và serve đến người dùng. Các topic quan trọng bao gồm:
