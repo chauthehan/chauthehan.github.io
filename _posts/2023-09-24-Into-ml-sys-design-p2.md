@@ -40,3 +40,38 @@ Trong quá trình training mô hình sẽ có nhiều thứ cần được xét 
 ###### Tạo dataset
 Có 5 bước cho quá trình tạo data.
 ![alt text](/assets/img/20230924_Intro_ml_sys_design_p2/data.webp)
+
+###### Lựa chọn hàm loss
+Hàm loss là phép đo độ chính xác của model. Hàm loss cho phép hàm tối ưu cập nhập tham số cho model trong suốt quá trình training để đưa loss về nhỏ nhất.
+Cần phải hiểu và lựa chọn hàm loss từ các hàm loss phổ biến và thỉnh thoảng bạn sẽ cần chỉnh sửa hàm loss cho phù hợp với vấn đề.
+
+###### Training từ đầu hay là fine-tune
+Fine-tune là việc tiếp tục huấn luyện mô hình dựa trên mô hình có sẵn khác so với training mô hình từ đầu. Suy nghĩ để lựa chọn phương pháp phù hợp.
+
+###### Distributed training
+Model có thể phát triển lớn hơn theo thời gian và dữ liệu cũng sẽ càng nhiều hơn. Distributed training là phương pháp tạo ra nhiều worker để training đồng thời model để tăng tốc quá trình training. Có 2 cách làm đó là data parallelism và model parallelism
+
+##### Evaluation
+
+Bước tiếp theo trong quá trình phát triển mô hình đó là evaluation, sử dụng một metric nào đó để đánh giá performance của model. Có 2 phương pháp evaluation đó là offline và online.
+
+###### Offline evaluation
+Phương pháp này sẽ đánh giá model trong quá trình phát triển. Dưới đây là các metric thường được sử dụng cho các task khác nhau.
+
+|**Task**| **Offline metrics**|
+|--------|--------------------|
+|Classification|Precision, recall, F1,  accuracy, ROC-AUC, confusion matrix  |
+|Regression| MSE, MAE, RMSE   |
+|Ranking| Precision@k, recall@k, MRR, mAP, nDCG |
+|Image generation|FID, Inception score |
+|NLP|BLEU, METEOR, ROUGE, CIDEr, SPICE |
+
+###### Online evaluation
+Đây là quá trình đánh giá model performance trên môi trường production. Các phép đo này có liên quan chặt chẽ đến đến mục tiêu business. Dưới đây là các metric cho các vấn đề khác nhau
+
+|**Problem**| **Online metrics**|
+|--------|--------------------|
+|Ad click prediction|Click-through rate, revenue lift, etc.|
+|Harmful content detection|Prevalence, valid appeals, etc.|
+|Video recommendation|Click-through rate, total watch time, number of completed videos, etc.|
+|Friend recommendation|Number of requests sent per day, number of requests accepted per day, etc.|
