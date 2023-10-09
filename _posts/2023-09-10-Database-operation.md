@@ -12,7 +12,7 @@ tags: [database, vectordatabase, filtering]
 
 Vector database có các chức năng phù hợp để sử dụng trong môi trường high scale production. Dưới đây là bức tranh tổng thể về các thành phần trong database
 
-![alt text](/assets/img/20231009_database_operation/overall_pic.png)
+![alt text](/assets/img/20230910_database_operation/overall_pic.png)
 
 #### Hiệu năng và khả năng chịu lỗi (Performance and Fault tolerance)
 

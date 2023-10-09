@@ -58,7 +58,7 @@ Nếu như không có công đoạn filter thì việc tìm kiếm sẽ khó kh�
 
 Phương pháp đầu tiên đó là pre-filter các vector, phương pháp này sẽ áp dụng các điều kiện lọc trước khi sử dụng ANN (Approximate nearest neighbor). Pre-query filtering sẽ áp dụng các điều kiện lọc vào các vector và sẽ trả về một danh sách kết quả - các vector có metadata thõa mãn điều kiện lặp. Sau đó, similarity search sẽ được thực hiện trên kết quả lọc này. Dưới đây là một ví dụ về việc khách hàng tìm kiếm một mẫu áo khoác jean Levi's, thì trước tiên, tất cả các áo khoác thương hiệu Levi's sẽ được lọc ra, và danh sách này sẽ được sử dụng để thực hiện vector similarity search.
 
-![alt text](/assets/img/20231009_filtering/pre_query_filtering_1_0b9037e1f2.png)
+![alt text](/assets/img/20230910_filtering/pre_query_filtering_1_0b9037e1f2.png)
 
 Phương pháp này tưởng chừng như là một giải pháp hợp lý, nhưng có nhược điểm là tiến trình search sẽ chậm, bởi vì tất cả dữ liệu cần được lọc trước khi thực hiện ANNS, chi phí tính toán cho phương pháp này rất lớn.
 
@@ -66,7 +66,7 @@ Phương pháp này tưởng chừng như là một giải pháp hợp lý, như
 
 Như tên gọi, post-query filtering sẽ sử dụng các điều kiện lọc vào kết quả mà query ra được. Ví dụ, cũng đối với bài toán tìm áo ở phần trên, thì hệ thống sẽ search ra các loại áo khoác giống nhất với trong ảnh, sau đó, kết quả sẽ được lọc ra theo nhãn hiệu của nó trong metadata.
 
-![alt text](/assets/img/20231009_filtering/post_query_filtering_2_183392564b.png)
+![alt text](/assets/img/20230910_filtering/post_query_filtering_2_183392564b.png)
 
 Tuy nhiên, một nhược điểm không thể tránh khỏi của cách là này đó là số lượng kết quả có metadata thõa mãn điều là không thể dự đoán được (có thể cực kỳ lớn hoặc là quá ít so với cái ta cần). Trong trường hợp tệ nhất, sẽ không cho ra được kết quả nào khi áp dụng post-query filtering.
 
@@ -74,7 +74,7 @@ Tuy nhiên, một nhược điểm không thể tránh khỏi của cách là n�
 
 Đây là một phương pháp ANNS và filtering được thực hiện đồng thời. Ví dụ trong mua sắm online, các hình ảnh của áo khoác jean sẽ được chuyển đổi thành các vector embedding và thông tin về thương hiệu cũng sẽ được lưu dưới dạng scalar cũng với các vector. 
 
-![alt text](/assets/img/20231009_filtering/in_query_filtering_1_e2ba43d80f.png)
+![alt text](/assets/img/20230910_filtering/in_query_filtering_1_e2ba43d80f.png)
 
 Đối với các làm này thì sẽ cần một hệ thống rất mạnh mẽ, vì sẽ cần tải lên bộ nhớ cả thông tin về vector embedding và dữ liệu về metadata cho filtering, việc search và filtering sẽ được diễn ra đồng thời. Trong trường hợp có quá nhiều thông tin cần lọc, rất có thể hệ thống sẽ xảy ra tình trường tràn bộ nhớ.
 
